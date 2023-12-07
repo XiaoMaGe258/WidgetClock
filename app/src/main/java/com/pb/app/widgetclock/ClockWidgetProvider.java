@@ -11,8 +11,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.provider.CalendarContract;
+import android.util.Log;
 import android.widget.RemoteViews;
 
 import java.util.Date;
@@ -50,6 +52,7 @@ public class ClockWidgetProvider extends AppWidgetProvider implements WidgetUpda
         SharedPreferences sharedPreferences = context.getSharedPreferences(context.getString(R.string.sp_main), MODE_PRIVATE);
         widgetViewCreator.onSharedPreferenceChanged(sharedPreferences,"");
         RemoteViews views = widgetViewCreator.createWidgetRemoteView();
+//        Log.i("xmg", "onUpdate  redrawWidgetFromData");
 
         Intent intent = new Intent(context, ClockWidgetProvider.class);
         intent.setAction(CLICK_ACTION_ALARM);
@@ -89,6 +92,13 @@ public class ClockWidgetProvider extends AppWidgetProvider implements WidgetUpda
         for (int widgetId : allWidgetIds) {
             redrawWidgetFromData(context, appWidgetManager, widgetId);
         }
+    }
+
+    @Override
+    public void onAppWidgetOptionsChanged(Context context, AppWidgetManager appWidgetManager, int appWidgetId, Bundle newOptions) {
+        super.onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, newOptions);
+//        Log.i("xmg", "onAppWidgetOptionsChanged");
+        redrawWidgetFromData(context, appWidgetManager, appWidgetId);
     }
 
     @Override

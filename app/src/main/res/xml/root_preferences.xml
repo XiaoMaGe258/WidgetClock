@@ -85,9 +85,9 @@
             app:useSimpleSummaryProvider="true" />
         <SeekBarPreference
             android:key="@string/sp_date_size"
-            android:max="30"
+            android:max="40"
             app:min="16"
-            android:defaultValue="22"
+            android:defaultValue="24"
             app:showSeekBarValue="true"
             android:title="@string/date_size_title"
             app:icon="@drawable/ic_size" />
