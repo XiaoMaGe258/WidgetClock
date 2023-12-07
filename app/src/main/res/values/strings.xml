@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">小马哥桌面时钟</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="save_title">保存</string>
+
+    <!-- Preference Titles -->
+    <string name="design_header">设计</string>
+    <string name="widget_layout_title">控件摆放方向</string>
+    <string name="time_header">时间样式</string>
+    <string name="date_header">日期样式</string>
+
+    <string name="color_picker_header">时间文字颜色</string>
+    <string name="show_time_title">是否显示时间</string>
+    <string name="time_format_title">时间显示格式</string>
+    <string name="clock_font_header">字体</string>
+    <string name="time_size_title">时间文字大小</string>
+    <string name="time_align_title">时间位置</string>
+
+    <string name="date_align_title">日期位置</string>
+    <string name="show_date_title">是否显示日期</string>
+    <string name="date_format_title">日期显示格式</string>
+    <string name="date_size_title">日期文字大小</string>
+    <string name="date_color_picker_title">日期文字颜色</string>
+
+    <string name="time_format_dialog_msg">H – Hour in day (0–23)\nk – Hour in day (1–24)\nK – Hour in am/pm (0–11) \nh - Hour in am/pm (1-12)\nm - Minute\ns - Second\na - Am/pm marker</string>
+    <string name="date_format_dialog_msg">y - Year\nM - Month\nd - Day in month\nD - Day in year\nE - Day name in week\nw - Week in year\nW - Week in month</string>
+
+    <!-- SharedPrefereces -->
+    <string name="sp_main">sp_main</string>
+
+    <string name="sp_font">sp_font</string>
+    <string name="sp_layout">sp_layout</string>
+
+    <string name="sp_clock_color">sp_clock_color</string>
+    <string name="sp_show_time">sp_show_time</string>
+    <string name="sp_time_format">sp_time_format</string>
+    <string name="sp_time_size">sp_time_size</string>
+    <string name="sp_time_align">sp_time_align</string>
+
+    <string name="sp_date_align">sp_date_align</string>
+    <string name="sp_show_date">sp_show_date</string>
+    <string name="sp_date_size">sp_date_size</string>
+    <string name="sp_date_format">sp_date_format</string>
+    <string name="sp_date_color">sp_date_color</string>
+
+
+</resources>

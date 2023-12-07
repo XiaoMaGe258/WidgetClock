@@ -1,0 +1,104 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/design_header">
+
+
+        <ListPreference
+            android:defaultValue="latoreg"
+            android:entries="@array/font_list"
+            android:entryValues="@array/font_list_values"
+            android:key="@string/sp_font"
+            android:title="@string/clock_font_header"
+            app:icon="@drawable/ic_font"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/widget_layout_titles"
+            android:entryValues="@array/widget_layout_values"
+            android:key="@string/sp_layout"
+            android:title="@string/widget_layout_title"
+            app:icon="@drawable/ic_layout"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/time_header">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/sp_show_time"
+            android:title="@string/show_time_title"
+            app:icon="@drawable/ic_clock" />
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="-1"
+            android:key="@string/sp_clock_color"
+            android:title="@string/color_picker_header"
+            app:cpv_showAlphaSlider="false"
+            app:icon="@drawable/ic_colorize" />
+        <EditTextPreference
+            android:defaultValue="k:mm"
+            android:dialogMessage="@string/time_format_dialog_msg"
+            android:icon="@drawable/ic_text"
+            android:key="@string/sp_time_format"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/time_format_title"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            android:key="@string/sp_time_size"
+            android:max="160"
+            app:min="60"
+            android:defaultValue="110"
+            app:showSeekBarValue="true"
+            android:title="@string/time_size_title"
+            app:icon="@drawable/ic_size" />
+        <ListPreference
+            android:defaultValue="17"
+            android:entries="@array/text_align_keys"
+            android:entryValues="@array/text_align_values"
+            android:key="@string/sp_time_align"
+            app:useSimpleSummaryProvider="true"
+            android:title="@string/time_align_title"
+            app:icon="@drawable/ic_align"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/date_header">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/sp_show_date"
+            android:title="@string/show_date_title"
+            app:icon="@drawable/ic_calander" />
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="-1"
+            android:key="@string/sp_date_color"
+            android:title="@string/date_color_picker_title"
+            app:cpv_showAlphaSlider="false"
+            app:icon="@drawable/ic_colorize" />
+        <EditTextPreference
+            android:defaultValue="yyyy-MM-dd  EEE"
+            android:dialogMessage="@string/date_format_dialog_msg"
+            android:icon="@drawable/ic_text"
+            android:key="@string/sp_date_format"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/date_format_title"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            android:key="@string/sp_date_size"
+            android:max="30"
+            app:min="16"
+            android:defaultValue="22"
+            app:showSeekBarValue="true"
+            android:title="@string/date_size_title"
+            app:icon="@drawable/ic_size" />
+        <ListPreference
+            android:defaultValue="17"
+            android:entries="@array/text_align_keys"
+            android:entryValues="@array/text_align_values"
+            android:key="@string/sp_date_align"
+            app:useSimpleSummaryProvider="true"
+            android:title="@string/date_align_title"
+            app:icon="@drawable/ic_align"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
