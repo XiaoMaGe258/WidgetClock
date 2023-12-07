@@ -28,6 +28,12 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <intent-filter>
+                <action android:name="CLICK_ACTION_ALARM" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="CLICK_ACTION_CALENDAR" />
+            </intent-filter>
+            <intent-filter>
                 <action android:name="com.pb.app.widgetclock.ClockWidgetProvider.CLICK_ACTION_ALARM" />
             </intent-filter>
             <intent-filter>
